@@ -14,9 +14,7 @@ android {
         minSdk = Versions.minSdk
         compileSdk = Versions.compileSdk
         val baseUrl = Versions.base_url
-        val apiKey = Versions.api_key
         buildConfigField ("String", "BASE_URL","\"${baseUrl}\"")
-        buildConfigField ("String", "API_KEY","\"${apiKey}\"")
     }
     buildTypes {
         getByName("debug")

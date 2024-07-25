@@ -4,8 +4,7 @@
     const val versionCode = 2
     const val appName = "skeleton"
     const val applicationId = "com.arch.".plus(appName)
-    const val base_url = "https://newsapi.org"
-    const val api_key = "7b2e2d90925644038c883f86e18b1fe2"
+    const val base_url = "https://"
     const val base_url_wws = "ws://"
     const val dao_name = "dao_"
     const val compileSdk = 34

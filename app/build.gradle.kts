@@ -18,14 +18,14 @@ android {
         buildConfig = true
         dataBinding = true
     }
-    signingConfigs {
-        create("release") {
-            storeFile = file("..\\key_test.jks")
-            storePassword = "Qwerty1qaz"
-            keyAlias = "my_key"
-            keyPassword = "Qwerty1qaz"
-        }
-    }
+//    signingConfigs {
+//        create("release") {
+//            storeFile = file("..\\key_test.jks")
+//            storePassword = "Qwerty1qaz"
+//            keyAlias = "my_key"
+//            keyPassword = "Qwerty1qaz"
+//        }
+//    }
     defaultConfig {
         applicationId = Versions.applicationId
         minSdk = Versions.minSdk
@@ -61,7 +61,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("release")
+            //signingConfig = signingConfigs.getByName("release")
         }
 
     }

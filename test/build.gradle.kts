@@ -20,11 +20,9 @@ android {
     defaultConfig {
         compileSdk = Versions.compileSdk
         minSdk = Versions.minSdk
-        val apiKey = Versions.api_key
        // testInstrumentationRunner = "com.arch.test.CustomTestRunner"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField ("String", "API_KEY","\"${apiKey}\"")
         testFunctionalTest = true
         testHandleProfiling = true
     }
